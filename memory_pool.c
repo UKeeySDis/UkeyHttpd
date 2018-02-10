@@ -143,7 +143,6 @@ static void *ukey_palloc_block(ukey_pool_t *pool, int size) {
 
 static void *ukey_palloc_large(ukey_pool_t *pool, int size) {
 	void *p;
-	int n = 0;
 	ukey_pool_large_t *l;
 
 	p = malloc(size);
@@ -216,3 +215,5 @@ int ukey_pfree(ukey_pool_t *pool, void *p) {
 	}
 	return -1;
 }
+
+
